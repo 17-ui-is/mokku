@@ -1,0 +1,67 @@
+@charset "utf-8";
+html {
+  font-size: 62.5%;
+}
+
+.X {
+  transform: translateX(-100%);
+  transition: all ease 0.6s;
+}
+.active {
+  transform: translateX(0%) !important;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 100%;
+}
+#rogo {
+  margin: 0;
+  padding: 30px 10px 10px 10px;
+  background-color: #fff;
+}
+#rogo img {
+  width: 100px;
+  height: auto;
+  float: left;
+}
+.content_1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 1000px;
+  justify-content: space-between;
+  padding: 48px 0px 0px 0px;
+}
+.content_2 {
+  flex: none;
+  height: 464px;
+  width: 100%;
+  max-width: 100%;
+}
+.content_3 {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+}
+
+#con {
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+}
+
+section p img {
+  width: 210px;
+  height: auto;
+}
+
+section h2 {
+  border-bottom: 1px solid #000000;
+}
