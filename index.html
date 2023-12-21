@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ソロトリスペシャルサイト</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />   
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <div id="rogo">
+        <div id="logo">
           <a href="index.html">
             <img src="img/ソロトリロゴ.png" alt="ロゴ" width="298" height="74"
           /></a>
@@ -19,42 +28,72 @@
     </header>
     <main>
       <div id="first">
-        <img src="img/first.png" alt="first" width="288" height="503" />
-      </div>
-    </main>
-    <div id="first2">
-      <img src="img/first2.png" alt="first2" width="470" height="631" />
-    </div>
-    <div>
+        <section>
+        <h1>一人旅で<br />人生にプラスを</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/first1.jpg" alt="first1" width="780" height="430" />
+            </div>
+          <div class="swiper-slide">
+              <img src="img/first2.jpg" alt="first2" width="780" height="430" />
+          </div>
+          <div class="swiper-slide">
+              <img src="img/first3.jpg" alt="first3" width="780" height="430" />
+          </div>
+        </div>
+        <div id="blook"></div>
+        <div class="swiper2 mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/first4.png" alt="first4" width="430" height="328" />
+          </div>
+          <div class="swiper-slide">
+              <img src="img/first5.png" alt="first5" width="430" height="328" />
+          </div>
+          <div class="swiper-slide">
+              <img src="img/first6.png" alt="first6" width="430" height="328" />
+        </div>
+      
+    </section>
+  </div>
+    <div id="sp">    
+      <div id="cont">
+        <div id="first2">
+          <div id="con1"><img src="img/content1_1.png" alt="content1_1" width="273" height="222" /></div>
+          <div id="con2"><img src="img/content1_2.png" alt="content1_2" width="195" height="154" /></div>
+          <div id="con3"><img src="img/content1_3.png" alt="content1_3" width="235" height="170" /></div>
+          <div id="con4"><img src="img/content1_4.png" alt="content1_4" width="269" height="220" /></div>
+          <div id="con5"><img src="img/content1_5.png" alt="content1_5" width="178" height="149" /></div> 
+          <div id="f2"></div>
       <p id="con">
         一人旅をしてみたい！
         <br />
-        <br />
         けど一歩踏み出せない…
-        <br /><br />
+        <br />
         そんな人の梯子に、
-        <br /><br />
+        <br />
         一人旅を通して
-        <br /><br />
+        <br />
         未来をよりよいものに
-        <br /><br />
+        <br />
         一人でも多くの人に
-        <br /><br />
+        <br />
         実現してもらいたい
-        <br /><br /><br />
+        <br />
         人生を豊かにする準備を
-        <br /><br />
+        <br />
         していきませんか
-      </p>
-    </div>
-    <section class="main">
+      </p>       
+      </div>
+        <section class="main">
       <h2>一人旅に行くと<br />こんなことが待っています</h2>
       <div class="flex">
         <div class="c1">
-          <p>
-            <img src="img/main1.png" alt="main1" width="478" height="384" />
+          <p id="bg1">
+            <img src="img/main1.png" alt="main1" width="478" height="380" />
           </p>
-          <p>
+          <p class="tex">
             生活を豊かにしたい！<br />
             なにか刺激がほしいと<br />
             思ったそこのあなた！<br />
@@ -62,29 +101,29 @@
           </p>
         </div>
         <div class="c2">
-          <p>
-            <img src="img/main2.png" alt="main2" width="490" height="382" />
+          <p id="bg2">
+            <img src="img/main2.png" alt="main2" width="478" height="380" />
           </p>
-          <p>
+          <p class="tex">
             一人旅に行くと新たな出会いや<br />
             価値観を得ることができます。
           </p>
         </div>
         <div class="c3">
-          <p>
+          <p id="bg3">
             <img src="img/main3.png" alt="main3" width="478" height="380" />
           </p>
-          <p>
+          <p class="tex">
             地域の人や自然と触れ合うことで<br />
             自分の見えていなかった部分がみえ、<br />
             視野を広げることができます。
           </p>
         </div>
         <div class="c4">
-          <p>
+          <p id="bg4">
             <img src="img/main4.png" alt="main4" width="478" height="380" />
           </p>
-          <p>
+          <p class="tex">
             自分一人で旅を通しいろいろな<br />
             ものに触れることで、仕事など<br />
             の私生活が豊かになり、ポジテ<br />
@@ -93,6 +132,216 @@
           </p>
         </div>
       </div>
+        </section>
+      <section class="ma2">
+      <h2>ポジティブ思考になると？</h2>
+      <div class="accordion">
+        <div class="accordion-container">
+          <div class="accordion-item">
+            <h3 class="accordion-title js-accordion-title">・行動力が増す</h3>
+            <div class="accordion-content">
+              <p>
+                ポジティブ思考だと好奇心が旺盛 で、チャンスが来たら迷わず飛び
+                込むことができます。 行動力が増すと普段関わらなかっ
+                た人と関わり、視野を広げること ができます。
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title js-accordion-title">
+              ・モチベーションの<br />　維持ができる
+            </h3>
+            <div class="accordion-content">
+              <p>
+                ポジティブ思考だと自信を持って 物事に取り組めるようになります。
+                前向きな思考から自分なら大丈夫 かもと考えられるようになります。
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title js-accordion-title">・人生が豊かになる</h3>
+            <div class="accordion-content">
+              <p>
+                ネガティブ思考な人は、起きても いない未来を心配したり憂鬱にな
+                ったりしがちです。 物事に対して不安になるようなこ
+                とは減っていき、不安な要素があ ってもそのときにどうするか考え
+                ようと気楽に構えられます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+        <section class="in">
+        <div class="lo-h2">
+          <img class="lo"
+          src="img/Instagram_Glyph_Gradient.png"
+          alt="instagramロゴ"
+          height="5000"
+          width="5000"
+        />
+        <h2>instagramでも話題に!</h2>
+          </div>
+          <div id="ta">
+            <div class="modal">
+              <div class="inner">
+                <!-- モーダルを開くボタン -->
+                <div class="swiper3 mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide modal__trigger">
+                      <img src="img/scon1_1.png" alt="体験談" />
+                      <img src="img/scon1_2.png" alt="行った街" />
+                    </div>
+                    <div class="swiper-slide modal__trigger">
+                      <img src="img/scon2_1.png" alt="体験談" />
+                      <img src="img/scon2_2.png" alt="行った街" />
+                    </div>
+                    <div class="swiper-slide modal__trigger">
+                        <img src="img/scon3_1.png" alt="体験談"/>
+                        <img src="img/scon3_2.png" alt="行った街"/>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- / モーダルを開くボタン -->
+        
+                <!-- モーダル本体 -->
+                <div class="modal__wrapper">
+                  <div class="modal__layer"></div>
+                  <div class="modal__container">
+                    <div class="modal__inner">
+                      <!-- モーダルを閉じるボタン -->
+                      <!-- <div class="modal__close"></div> -->
+                      <!-- / モーダルを閉じるボタン -->
+                      <!-- モーダル内のコンテンツ -->
+                      <div class="modal__content">
+                        <p class="modal__title">
+                          <img src="img/scon1_1.png" alt="体験談" />
+                          <img src="img/scon1_2.png" alt="行った街" class="bet"/>
+                        </p>
+                        <p class="modal__text">
+                          <p class="name">結城 花梨</p>
+                          <p class="age">20代/女性</p>
+                          <p class="experience">京都に行ってきました！
+                            最近仕事で上手くいかないこ
+                            とが続いてたけど一人旅に行
+                            ってから、物事を客観視する
+                            ことができるようになった気
+                            がします。
+                            最近は次はどこに行こうかな
+                            と考える日々です。</p>
+                        </p>
+                      </div>
+                      <!-- / モーダル内のコンテンツ -->
+                    </div>
+                  </div>
+                </div>
+                <!-- / モーダル本体 -->
+        
+                <!-- モーダル本体 -->
+                <div class="modal__wrapper">
+                  <div class="modal__layer"></div>
+                  <div class="modal__container">
+                    <div class="modal__inner">
+                      <!-- モーダルを閉じるボタン -->
+                      <div class="modal__close"></div>
+                      <!-- / モーダルを閉じるボタン -->
+        
+                      <!-- モーダル内のコンテンツ -->
+                      <div class="modal__content">
+                        <p class="modal__title">
+                          <img src="img/scon2_1.png" alt="体験談" />
+                          <img src="img/scon2_2.png" alt="行った街" class="bet"/>
+                        </p>
+                        <p class="modal__text">
+                          <p class="name">浅野 結奈</p>
+                          <p class="age">30代/女性</p>
+                          <p class="experience">京都に行ってきました！
+                            浅草に行ってきました。
+                            誰にも振り回されることがな
+                            く、自由気ままに行動するこ
+                            とができる。自分の性に合っ
+                            ているのか、時間ができたら
+                            よく一人旅に行っています。
+                            何も考えなくていいので、頭
+                            を切り替えるのにはすごくい
+                            いです。</p>
+                        </p>
+                      </div>
+                      <!-- / モーダル内のコンテンツ -->
+                    </div>
+                  </div>
+                </div>
+                <!-- / モーダル本体 -->
+        
+                <!-- モーダル本体 -->
+                <div class="modal__wrapper">
+                  <div class="modal__layer"></div>
+                  <div class="modal__container">
+                    <div class="modal__inner">
+                      <!-- モーダルを閉じるボタン -->
+                      <div class="modal__close"></div>
+                      <!-- / モーダルを閉じるボタン -->
+                      <!-- モーダル内のコンテンツ -->
+                      <div class="modal__content">
+                        <p class="modal__title">
+                          <img src="img/scon3_1.png" alt="体験談"/>
+                        <img src="img/scon3_2.png" alt="行った街" class="bet"/>
+                        </p>
+                        <p class="modal__text">
+                          <p class="name">熊谷 雄吾</p>
+                          <p class="age">30代/男性</p>
+                          <p class="experience">京都に行ってきました！
+                            愛知に行ってきました！
+                            私生活で悲しい出来事があっ
+                            て自然に触れたいと思い、前
+                            から気になってた一人旅に行
+                            ってきました。
+                            完全に切り替えることはでき
+                            てませんが少しは気が晴れる
+                            ことができたので、私生活頑
+                            張っていこうと思います。</p>
+                        </p>
+                      </div>
+                      <!-- / モーダル内のコンテンツ -->
+                    </div>
+                  </div>
+                </div>
+                <!-- / モーダル本体 -->
+            </div>
+          </div>
+      </section>
+        <section class="in" id="ins">
+          <div class="lo-h2">
+        <img class="lo"
+        src="img/Instagram_Glyph_Gradient.png"
+        alt="instagramロゴ"
+        width="5000"
+        height="5000"
+      />
+      <section>
+      <h2>公式instagram</h2>
+      </section>
+      </section>
+      </div></div>
+      <div id="sh"></div>
+      </div>
+  </main>
+    <footer>
+      <img
+        src="img/ソロトリロゴ.png"
+        alt="ソロトリロゴ"
+        height="298"
+        width="74"
+      />
+      <img
+        src="img/Instagram_Glyph_Gradient.png"
+        alt="instagramロゴ"
+        width="5000"
+        height="5000"
+      class="logo2"/>
+      <p><small>@Copyright © ソロトリ All Rights Reserved.</small></p>
+    </footer>
   </body>
 </html>
+
