@@ -165,9 +165,8 @@ gsap.fromTo(
     autoAlpha: 1, // アニメーション後に出現(透過率0)
     scrollTrigger: {
       trigger: '#con', // アニメーションが始まるトリガーとなる要素
-      // toggleActions: 'play none none reverse', // 上スクロールで戻る
-      start: 'top center',
-      scrub: 1, // アニメーションの開始位置
+      toggleActions: 'play none none reverse', // 上スクロールで戻る
+      start: 'top center', // アニメーションの開始位置
     },
   }
 );
@@ -182,9 +181,8 @@ gsap.fromTo(
     autoAlpha: 1, // アニメーション後に出現(透過率0)
     scrollTrigger: {
       trigger: '.c1', // アニメーションが始まるトリガーとなる要素
-      // toggleActions: 'play none none reverse', // 上スクロールで戻る
-      start: 'top center',
-      scrub: 1, // アニメーションの開始位置
+      toggleActions: 'play none none reverse', // 上スクロールで戻る
+      start: 'top center', // アニメーションの開始位置
     },
   }
 );
@@ -199,9 +197,8 @@ gsap.fromTo(
     autoAlpha: 1, // アニメーション後に出現(透過率0)
     scrollTrigger: {
       trigger: '.c2', // アニメーションが始まるトリガーとなる要素
-      // toggleActions: 'play none none reverse', // 上スクロールで戻る
-      start: 'top center',
-      scrub: 1, // アニメーションの開始位置
+      toggleActions: 'play none none reverse', // 上スクロールで戻る
+      start: 'top center', // アニメーションの開始位置
     },
   }
 );
@@ -216,9 +213,8 @@ gsap.fromTo(
     autoAlpha: 1, // アニメーション後に出現(透過率0)
     scrollTrigger: {
       trigger: '.c3', // アニメーションが始まるトリガーとなる要素
-      // toggleActions: 'play none none reverse', // 上スクロールで戻る
-      start: 'top center',
-      scrub: 1, // アニメーションの開始位置
+      toggleActions: 'play none none reverse', // 上スクロールで戻る
+      start: 'top center', // アニメーションの開始位置
     },
   }
 );
@@ -280,3 +276,33 @@ $(layer)
     // サイトのスクロール禁止を解除する
     $('html, body').removeAttr('style');
   });
+
+  async function getApi(){
+    const api = await fetch(
+      
+    );
+    return api.json();
+  }
+
+  getApi()
+  .then((response) =>{
+    console.log(respones);
+    const li = document.querySelector('')
+    li.innerHTML += response.insta.url1;
+  })
+  .catch(() => {
+    console.log('err')
+  })
+
+function changeColorOnScroll() {
+    // スクロールの垂直位置を取得します。
+    var scrollY = window.scrollY || document.documentElement.scrollTop;
+
+    // スクロール値に応じて色を変更します。
+    var colorChangeElement = document.querySelector('#bool1');
+    if (scrollY > 100) {
+      colorChangeElement.style.color = 'brack';
+    } else {
+      colorChangeElement.style.color = 'red';
+    }
+}
