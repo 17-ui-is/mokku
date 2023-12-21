@@ -277,32 +277,102 @@ $(layer)
     $('html, body').removeAttr('style');
   });
 
-  async function getApi(){
-    const api = await fetch(
-      
-    );
-    return api.json();
-  }
+async function getApi() {
+  const api = await fetch();
+  return api.json();
+}
 
-  getApi()
-  .then((response) =>{
+getApi()
+  .then((response) => {
     console.log(respones);
-    const li = document.querySelector('')
+    const li = document.querySelector('');
     li.innerHTML += response.insta.url1;
   })
   .catch(() => {
-    console.log('err')
-  })
+    console.log('err');
+  });
 
-function changeColorOnScroll() {
-    // スクロールの垂直位置を取得します。
-    var scrollY = window.scrollY || document.documentElement.scrollTop;
-
-    // スクロール値に応じて色を変更します。
-    var colorChangeElement = document.querySelector('#bool1');
-    if (scrollY > 100) {
-      colorChangeElement.style.color = 'brack';
-    } else {
-      colorChangeElement.style.color = 'red';
-    }
+function changeColorOnScroll1() {
+  // スクロールの垂直位置を取得します。
+  let scrollY = window.scrollY;
+  // スクロール値に応じて色を変更します。
+  let colorChangeElement = document.querySelector('#bool1');
+  if (scrollY > 100) {
+    colorChangeElement.style.backgroundColor = '#FF4949';
+  } else {
+    colorChangeElement.style.backgroundColor = '#d9d9d9';
+  }
 }
+
+let colorChangeElement1 = document.querySelector('#bool1');
+window.addEventListener('scroll', () => {
+  changeColorOnScroll1();
+});
+
+function changeColorOnScroll2() {
+  // スクロールの垂直位置を取得します。
+  let scrollY = window.scrollY;
+  // スクロール値に応じて色を変更します。
+  let colorChangeElement = document.querySelector('#bool2');
+  if (scrollY > 1080) {
+    colorChangeElement.style.backgroundColor = '#FF4949';
+  } else {
+    colorChangeElement.style.backgroundColor = '#d9d9d9';
+  }
+}
+
+let colorChangeElement2 = document.querySelector('#bool2');
+window.addEventListener('scroll', () => {
+  changeColorOnScroll2();
+});
+
+function changeColorOnScroll3() {
+  // スクロールの垂直位置を取得します。
+  let scrollY = window.scrollY;
+  // スクロール値に応じて色を変更します。
+  let colorChangeElement = document.querySelector('#bool3');
+  if (scrollY > 2500) {
+    colorChangeElement.style.backgroundColor = '#FF4949';
+  } else {
+    colorChangeElement.style.backgroundColor = '#d9d9d9';
+  }
+}
+
+let colorChangeElement3 = document.querySelector('#bool3');
+window.addEventListener('scroll', () => {
+  changeColorOnScroll3();
+});
+
+function changeColorOnScroll4() {
+  // スクロールの垂直位置を取得します。
+  let scrollY = window.scrollY;
+  // スクロール値に応じて色を変更します。
+  let colorChangeElement = document.querySelector('#bool4');
+  if (scrollY > 3000) {
+    colorChangeElement.style.backgroundColor = '#FF4949';
+  } else {
+    colorChangeElement.style.backgroundColor = '#d9d9d9';
+  }
+}
+
+let colorChangeElement4 = document.querySelector('#bool4');
+window.addEventListener('scroll', () => {
+  changeColorOnScroll4();
+});
+
+function changeColorOnScroll5() {
+  // スクロールの垂直位置を取得します。
+  let scrollY = window.scrollY;
+  // スクロール値に応じて色を変更します。
+  let colorChangeElement = document.querySelector('#bool5');
+  if (scrollY > 3400) {
+    colorChangeElement.style.backgroundColor = '#FF4949';
+  } else {
+    colorChangeElement.style.backgroundColor = '#d9d9d9';
+  }
+}
+
+let colorChangeElement5 = document.querySelector('#bool5');
+window.addEventListener('scroll', () => {
+  changeColorOnScroll5();
+});
