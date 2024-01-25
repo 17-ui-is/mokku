@@ -247,6 +247,7 @@ let swiper3 = new Swiper('.swiper3', {
   },
   spaceBetween: 30,
   slidesPerView: 1.3,
+  centerdSlides: true,
 });
 
 var trigger = $('.modal__trigger'),
